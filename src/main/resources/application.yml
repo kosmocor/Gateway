@@ -23,10 +23,10 @@ spring:
           uri: http://localhost:8085
           predicates:
             - Path=/roomInfoes/**
-        - id: promotionManagement
-          uri: http://localhost:8086
+        - id: deliveries
+          uri: http://localhost:8089
           predicates:
-            - Path=/promotions/**
+            - Path=/deliveries/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -64,10 +64,10 @@ spring:
           uri: http://roomInfo:8080
           predicates:
             - Path=/roomInfoes/**
-        - id: promotionmanagement
-          uri: http://promotion:8080
+        - id: deliveries
+          uri: http://delivery:8080
           predicates:
-            - Path=/promotions/**
+            - Path=/deliveries/**
       globalcors:
         corsConfigurations:
           '[/**]':
